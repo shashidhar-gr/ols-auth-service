@@ -9,3 +9,6 @@ Appication development steps:
 5. sudo npm install express --save
 6. sudo npm install --save-dev nodemon
 7. sudo npm install --save-dev typescript
+8. start with app.ts file src folder
+9. sudo npm install --save-dev @types/node
+
