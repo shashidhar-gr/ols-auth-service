@@ -1,4 +1,5 @@
 import express from 'express';
+import routes from '../api';
 
 export default ({ app }: { app: express.Application }) => {
     /**
@@ -11,6 +12,9 @@ export default ({ app }: { app: express.Application }) => {
     app.head('/status', (req, res) => {
         res.status(200).end();
     })
+
+    //Load API routes
+    app.use('/api', routes());
 
     /// catch 404 and forward to error handler
     app.use((req, res, next) => {
