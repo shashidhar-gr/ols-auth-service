@@ -1,0 +1,31 @@
+{
+  "name": "ols-auth-service",
+  "version": "1.0.0",
+  "description": "microservice auth servive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashidhar-gr/ols-auth-service.git"
+  },
+  "keywords": [
+    "nodejs",
+    "microservices",
+    "mysql"
+  ],
+  "author": "shashidhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashidhar-gr/ols-auth-service/issues"
+  },
+  "homepage": "https://github.com/shashidhar-gr/ols-auth-service#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "typescript": "^3.7.2"
+  }
+}
