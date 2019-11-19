@@ -1,8 +1,10 @@
 import express from 'express';
 
-function startServer() {
+async function startServer() {
     const app = express();
-
+    
+    await require('./loaders').default({ expressApp: app});
+    
     app.listen(3000, err => {
         if(err) {
             console.log('Error while starting server. '+err);
