@@ -1,4 +1,5 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import routes from '../api';
 
 export default ({ app }: { app: express.Application }) => {
@@ -13,6 +14,9 @@ export default ({ app }: { app: express.Application }) => {
         res.status(200).end();
     })
 
+    //Middleware that transfers the raw string of req.body into json
+    app.use(bodyParser.json());
+    
     //Load API routes
     app.use('/api', routes());
 
